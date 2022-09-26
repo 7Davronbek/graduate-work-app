@@ -1,10 +1,14 @@
-import { HashRouter } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
+import Navbar from "./components/Navbar"
 import Main from "./pages/Main"
 
 const App = () => {
   return (
     <HashRouter>
-      <Main>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
     </HashRouter>
   )
 }
