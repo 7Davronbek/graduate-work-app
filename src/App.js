@@ -10,6 +10,7 @@ const App = () => {
         <Route path="/" element={<Main />} />
       </Routes>
       <div className="vh-100"></div>
+      <div className="vh-100"></div>
     </HashRouter>
   )
 }

@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #c0c0c069;
 
     h1,
     h2,
@@ -55,6 +56,19 @@ body {
         padding: 40px 0;
         display: flex;
         align-items: center;
+        backdrop-filter: blur(30px);
+        transition: all .5s ease-in-out;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(30px);
+
+        &.active {
+            box-shadow: 0 0 10px silver;
+            padding: 20px 0;
+            // background-color: ;
+        }
 
         ul {
             display: flex;
