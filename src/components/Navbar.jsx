@@ -5,10 +5,10 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import { BsBagCheck } from 'react-icons/bs'
 
 const Navbar = () => {
-    window.addEventListener('scroll', () => {
-        const navbar = this.document.querySelector('.Navbar')
-        navbar.classList.toggle('active', this.window.screenY > 100)
-    })
+    // window.addEventListener('scroll', () => {
+    //     const navbar = this.document.querySelector('.Navbar')
+    //     navbar.classList.toggle('active', this.window.screenY > 100)
+    // })
     return (
         <div className='Navbar'>
             <div className="container">
@@ -27,12 +27,12 @@ const Navbar = () => {
                         
 
                         <div className="right">
-                                <RiUser3Line />
-                                <AiOutlineHeart />
-                                <div className="bag">
+                                <Link to='/user'><RiUser3Line /></Link>
+                                <Link to='/wishlist'><AiOutlineHeart /></Link>
+                                <Link to='/cart' className="bag">
                                     <BsBagCheck />
                                     MY CART (0)
-                                </div>
+                                </Link>
                             </div>
                     </div>
                 </div>

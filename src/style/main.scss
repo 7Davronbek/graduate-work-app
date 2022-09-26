@@ -72,6 +72,26 @@ body {
             }
         }
 
+        .right {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .bag {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(45deg, #5e36e1, #6177c7);
+            padding: 12px 26px;
+            border-radius: 35px;
+            color: #fff;
+            font-size: 17px !important;
+
+            svg {
+                margin-right: 7px;
+            }
+        }
+
         .logo {
             font-family: 'Delius Swash Caps', cursive;
             font-size: 30px;
