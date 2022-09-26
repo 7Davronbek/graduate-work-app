@@ -1,7 +1,11 @@
+import { HashRouter } from "react-router-dom"
+import Main from "./pages/Main"
 
 const App = () => {
   return (
-    <div>App</div>
+    <HashRouter>
+      <Main>
+    </HashRouter>
   )
 }
 
