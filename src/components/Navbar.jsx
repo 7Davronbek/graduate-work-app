@@ -18,7 +18,7 @@ const Navbar = () => {
                     </div>
                     <div className="col-lg-10 myNav">
                         <ul>
-                            <li><Link to='/'>HOME</Link></li>
+                            <li className='ms-5'><Link to='/'>HOME</Link></li>
                             <li><Link to='/'>SHOP</Link></li>
                             <li><Link to='/'>ABOUT US</Link></li>
                             <li><Link to='/'>BLOG</Link></li>
