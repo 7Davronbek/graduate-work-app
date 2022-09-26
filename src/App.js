@@ -9,6 +9,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Main />} />
       </Routes>
+      
+      <div className="blurLeft"></div>
+      <div className="blurRight"></div>
       <div className="vh-100"></div>
       <div className="vh-100"></div>
     </HashRouter>

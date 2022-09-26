@@ -67,7 +67,7 @@ body {
         &.active {
             box-shadow: 0 0 10px silver;
             padding: 20px 0;
-            // background-color: ;
+            background-color: #ffffff38;
         }
 
         ul {
@@ -113,5 +113,27 @@ body {
             font-weight: 600;
             color: #0409ad;
         }
+    }
+    
+    .blurLeft {
+        position: absolute;
+        top: 50%;
+        width: 400px;
+        height: 400px;
+        border-radius: 10%;
+        left: -125px;
+        background: linear-gradient(194.7deg, #2e2f9ba1 18.97%, #5f50d7 71.56%);
+        filter: blur(100px);
+    }
+    
+    .blurRight {
+        position: absolute;
+        top: 50%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        left: -125px;
+        background: linear-gradient(194.7deg, #774ec5a1 18.97%, #713892 71.56%);
+        filter: blur(28px);
     }
 }
