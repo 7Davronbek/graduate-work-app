@@ -7,6 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #c0c0c069;
+    overflow-x: hidden;
 
     h1,
     h2,
@@ -114,7 +115,7 @@ body {
             color: #0409ad;
         }
     }
-    
+
     .blurLeft {
         position: absolute;
         top: 50%;
@@ -124,16 +125,34 @@ body {
         left: -125px;
         background: linear-gradient(194.7deg, #2e2f9ba1 18.97%, #5f50d7 71.56%);
         filter: blur(100px);
+        animation: anim1 5s linear infinite alternate;
     }
-    
+
     .blurRight {
         position: absolute;
-        top: 50%;
+        top: 10%;
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        left: -125px;
+        right: 40px;
         background: linear-gradient(194.7deg, #774ec5a1 18.97%, #713892 71.56%);
         filter: blur(28px);
+        animation: anim1 17s linear infinite alternate;
+    }
+}
+
+
+
+@keyframes anim1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(100px, 100px);
+    }
+
+    100% {
+        transform: translate(0, 0);
     }
 }
