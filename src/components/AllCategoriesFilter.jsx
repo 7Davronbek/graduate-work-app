@@ -16,6 +16,7 @@ const AllCategoriesFilter = () => {
 
                         <p>Examples: Mockup, PSD, Schema, Image...</p>
                     </div>
+                    
                 </div>
             </div>
         </div>
