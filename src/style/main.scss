@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Poppins:wght@300;400;600&display=swap');
 
+$purple: #5e36e1;
+$blue: #6177c7;
+
 #root {
     overflow-x: hidden;
 }
@@ -111,8 +114,13 @@ body {
         .logo {
             font-family: 'Delius Swash Caps', cursive;
             font-size: 30px;
-            font-weight: 600;
+            font-weight: 900;
             color: #0409ad;
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(45deg, #6177c7, #5e36e1);
+            // background: linear-gradient(90deg, cyan 5.17%, #2fcfff 20.42%, #8777ff 50.22%, #c737ff 74.57%, #ef0fff 92.19%, #f0f 101.3%);
+            -webkit-background-clip: text;
+            background-clip: text;
         }
     }
 
@@ -138,6 +146,23 @@ body {
         background: linear-gradient(194.7deg, #774ec5a1 18.97%, #713892 71.56%);
         filter: blur(28px);
         animation: anim1 17s linear infinite alternate;
+    }
+
+    .navbarLine {
+        margin-bottom: 130px;
+    }
+
+    .Header {
+        padding: 50px 0;
+
+        h1 {
+            text-align: center;
+            font-size: 54px;
+
+            span {
+                color: $purple;
+            }
+        }
     }
 }
 

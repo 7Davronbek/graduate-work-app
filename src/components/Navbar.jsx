@@ -27,10 +27,10 @@ const Navbar = () => {
             <div className={`Navbar ${navbar ? 'active' : ''}`}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-2">
-                            <Link className='logo' to='/'>SCHEMA</Link>
+                        <div className="col-lg-3">
+                            <Link className='logo' to='/'>SCHEMA </Link>
                         </div>
-                        <div className="col-lg-10 myNav">
+                        <div className="col-lg-9 myNav">
                             <ul>
                                 <li className='ms-5'><Link to='/'>HOME</Link></li>
                                 <li><Link to='/'>SHOP</Link></li>
