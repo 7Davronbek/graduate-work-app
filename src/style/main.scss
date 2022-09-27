@@ -158,10 +158,18 @@ body {
         h1 {
             text-align: center;
             font-size: 54px;
+            margin-top: 20px;
 
             span {
                 color: $purple;
             }
+        }
+
+        p {
+            color: #505050bd;
+            margin-top: 30px;
+            font-size: 20px;
+            text-align: center;
         }
     }
 }
