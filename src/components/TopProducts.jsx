@@ -23,7 +23,7 @@ const TopProducts = () => {
                 </div>
                 <div className="col-lg-4">
                     <div className="cards">
-                        <img src="/images/1.png" className='w-100' alt="" />
+                        <img src="/images/2.png" className='w-100' alt="" />
                         <div className="btnWrap">
                             <div className="shop"><FiShoppingBag /></div>
                             <div className="heart"><AiOutlineHeart /></div>
@@ -33,7 +33,7 @@ const TopProducts = () => {
                 </div>
                 <div className="col-lg-4">
                     <div className="cards">
-                        <img src="/images/1.png" className='w-100' alt="" />
+                        <img src="/images/3.png" className='w-100' alt="" />
                         <div className="btnWrap">
                             <div className="shop"><FiShoppingBag /></div>
                             <div className="heart"><AiOutlineHeart /></div>
@@ -43,7 +43,7 @@ const TopProducts = () => {
                 </div>
                 <div className="col-lg-4">
                     <div className="cards">
-                        <img src="/images/1.png" className='w-100' alt="" />
+                        <img src="/images/4.png" className='w-100' alt="" />
                         <div className="btnWrap">
                             <div className="shop"><FiShoppingBag /></div>
                             <div className="heart"><AiOutlineHeart /></div>
@@ -53,7 +53,7 @@ const TopProducts = () => {
                 </div>
                 <div className="col-lg-4">
                     <div className="cards">
-                        <img src="/images/1.png" className='w-100' alt="" />
+                        <img src="/images/7.png" className='w-100' alt="" />
                         <div className="btnWrap">
                             <div className="shop"><FiShoppingBag /></div>
                             <div className="heart"><AiOutlineHeart /></div>
@@ -63,7 +63,7 @@ const TopProducts = () => {
                 </div>
                 <div className="col-lg-4">
                     <div className="cards">
-                        <img src="/images/1.png" className='w-100' alt="" />
+                        <img src="/images/6.png" className='w-100' alt="" />
                         <div className="btnWrap">
                             <div className="shop"><FiShoppingBag /></div>
                             <div className="heart"><AiOutlineHeart /></div>
