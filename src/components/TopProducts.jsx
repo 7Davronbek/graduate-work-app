@@ -21,6 +21,56 @@ const TopProducts = () => {
                         </div>
                     </div>
                 </div>
+                <div className="col-lg-4">
+                    <div className="cards">
+                        <img src="/images/1.png" className='w-100' alt="" />
+                        <div className="btnWrap">
+                            <div className="shop"><FiShoppingBag /></div>
+                            <div className="heart"><AiOutlineHeart /></div>
+                            <div className="search"><FiSearch /></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4">
+                    <div className="cards">
+                        <img src="/images/1.png" className='w-100' alt="" />
+                        <div className="btnWrap">
+                            <div className="shop"><FiShoppingBag /></div>
+                            <div className="heart"><AiOutlineHeart /></div>
+                            <div className="search"><FiSearch /></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4">
+                    <div className="cards">
+                        <img src="/images/1.png" className='w-100' alt="" />
+                        <div className="btnWrap">
+                            <div className="shop"><FiShoppingBag /></div>
+                            <div className="heart"><AiOutlineHeart /></div>
+                            <div className="search"><FiSearch /></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4">
+                    <div className="cards">
+                        <img src="/images/1.png" className='w-100' alt="" />
+                        <div className="btnWrap">
+                            <div className="shop"><FiShoppingBag /></div>
+                            <div className="heart"><AiOutlineHeart /></div>
+                            <div className="search"><FiSearch /></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4">
+                    <div className="cards">
+                        <img src="/images/1.png" className='w-100' alt="" />
+                        <div className="btnWrap">
+                            <div className="shop"><FiShoppingBag /></div>
+                            <div className="heart"><AiOutlineHeart /></div>
+                            <div className="search"><FiSearch /></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
