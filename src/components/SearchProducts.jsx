@@ -9,8 +9,15 @@ const SearchProducts = ({ value, onSearch }) => {
         <>
             {/* <div className='SearchProducts TopProducts my-5'> */}
 
-            {data.map((item, index) => (
+            {data.filter((item, index) => {
+                const searchKey = value.toLowerCase()
+                const title = item.title.toLocaleLowerCase()
 
+                return searchKey && title.startWith(searchKey) && title !== searchKey
+
+
+            }
+            ).slice(0, 10).map(item, index) => {
                 <div key={index} className="col-lg-4">
                     <div className="cards">
                         <div className="cardsHeader">
@@ -27,9 +34,7 @@ const SearchProducts = ({ value, onSearch }) => {
                             <p>By {item.creator}</p>
                         </Link>
                     </div>
-                </div>
-
-            ))}
+                </div>}}
 
             {/* </div> */}
         </>
