@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { FiSearch, FiShoppingBag } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
@@ -8,6 +8,17 @@ import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
 
 const TopProducts = () => {
+    
+    const [value, setValue] = useState('')
+    
+    const onChange = e => {
+        setValue(e.target.value)
+    }
+
+    const onSearch = key => {
+        setValue(key)
+    }
+
     return (
         <>
             <div className='TopProducts'>
