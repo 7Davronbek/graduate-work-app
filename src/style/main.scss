@@ -2,6 +2,7 @@
 
 $purple: #5e36e1;
 $blue: #6177c7;
+$secondary: #505050bd;
 
 #root {
     overflow-x: hidden;
@@ -217,11 +218,50 @@ body {
             margin-bottom: 30px;
         }
 
+        h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            color: #505050bd;
+        }
+
         .cards {
-            overflow: hidden;
             position: relative;
-            border-radius: 20px;
             overflow: hidden;
+
+            h5 {
+                font-weight: 600;
+                color: #333;
+                margin-top: 12px;
+            }
+
+            h6 {
+                font-weight: 600;
+                margin: 8px 0 12px;
+                text-align: right;
+            }
+
+            p {
+                font-style: italic;
+                color: $secondary;
+            }
+
+            .cardsHeader {
+                position: relative;
+                width: 100%;
+                height: 421px;
+                overflow: hidden;
+
+                img {
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
 
             .btnWrap {
                 position: absolute;
@@ -236,7 +276,6 @@ body {
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
-                    background-color: #fff;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -248,6 +287,49 @@ body {
 
                     &.heart {
                         margin: 0 20px;
+                    }
+                }
+
+                .search, .heart, .shop {
+                    transition: all .3s ease-in-out;
+                    transform: translateY(50px);
+                    opacity: 0;
+                    visibility: hidden;
+                    cursor: pointer;
+                    background: #fff;
+
+                    svg {
+                        transition: all .3s ease-in-out;
+                        color: #000;
+                    }
+
+                    &:hover {
+                        background: $purple;
+
+                        svg {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .heart {
+                    transition-delay: .05s;
+                }
+
+                .shop {
+                    transition-delay: .1s;
+                }
+                
+            }
+
+            &:hover {
+
+                .btnWrap {
+
+                    .search, .shop, .heart {
+                        transform: translateY(0);
+                        opacity: 1;
+                        visibility: visible;
                     }
                 }
             }
