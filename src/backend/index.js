@@ -19,7 +19,7 @@ export const data = [
         'title': 'Lorem ipsum dolor sit amet consectetur  elit.',
         'price': '120.000 sum',
         'creator': 'Abdushkurov Shavkat',
-        'category': 'Icon'
+        'category': 'Mochups'
     },
     {
         'image': '/images/4.png',
@@ -40,6 +40,6 @@ export const data = [
         'title': 'Lorem ipsum dolor sit amet consectetur  elit.',
         'price': '120.000 sum',
         'creator': 'Abdushkurov Shavkat',
-        'category': 'Icon'
+        'category': 'Mochups'
     },
 ]

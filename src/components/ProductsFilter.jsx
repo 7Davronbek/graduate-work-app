@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom'
 const ProductsFilter = () => {
 
     const [datas, setDatas] = useState(data)
-    const allCategories = ['all', ...new Set(datas.map((item) => item.category))]
+    const allCategories = ['All', ...new Set(datas.map((item) => item.category))]
     const [category, setCategory] = useState(allCategories)
 
     const handleFilter = category => {
-        const newItem = data.filter((item) => item.category === category)
-        setCategory(newItem)
+        const newItem = datas.filter((item) => item.category === category)
+        setDatas(newItem)
 
-        if (category === 'all') {
+        if (category === 'All') {
             setDatas(data)
             return
         }
@@ -26,7 +26,7 @@ const ProductsFilter = () => {
                 <div className="row">
                     <div className="col-lg-12">
                         {category.map((item, index) => (
-                            <button onClick={() => handleFilter(item.category)} key={index} className='btn myBtn'>{item}</button>
+                            <button onClick={() => handleFilter(item)} key={index} className='btn myBtn'>{item}</button>
                         ))}
                     </div>
                 </div>

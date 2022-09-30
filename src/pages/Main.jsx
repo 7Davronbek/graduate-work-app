@@ -8,8 +8,8 @@ const Main = () => {
     return (
         <>  
             <Header />
-            <AllCategoriesFilter />
-            <TopProducts />
+            {/* <AllCategoriesFilter />
+            <TopProducts /> */}
             <ProductsFilter />
         </>
     )
