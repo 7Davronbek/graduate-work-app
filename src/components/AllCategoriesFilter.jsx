@@ -22,7 +22,7 @@ const AllCategoriesFilter = () => {
                         <div className="wrap">
                             <h5>All Categories</h5>
                             <hr />
-                            <input type="text" placeholder='Search Products...' className="form-control ms-2" />
+                            <input onChange={onChange} type="text" placeholder='Search Products...' className="form-control ms-2" />
                             <BiSearch />
                         </div>
 

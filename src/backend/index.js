@@ -7,7 +7,31 @@ export const data = [
         'creator': 'Abdushkurov Shavkat'
     },
     {
-        'image': '/images/1.png',
+        'image': '/images/2.png',
+        'title': 'Lorem ipsum dolor sit amet consectetur  elit.',
+        'price': '120.000 sum',
+        'creator': 'Abdushkurov Shavkat'
+    },
+    {
+        'image': '/images/3.png',
+        'title': 'Lorem ipsum dolor sit amet consectetur  elit.',
+        'price': '120.000 sum',
+        'creator': 'Abdushkurov Shavkat'
+    },
+    {
+        'image': '/images/4.png',
+        'title': 'Lorem ipsum dolor sit amet consectetur  elit.',
+        'price': '120.000 sum',
+        'creator': 'Abdushkurov Shavkat'
+    },
+    {
+        'image': '/images/7.png',
+        'title': 'Lorem ipsum dolor sit amet consectetur  elit.',
+        'price': '120.000 sum',
+        'creator': 'Abdushkurov Shavkat'
+    },
+    {
+        'image': '/images/6.png',
         'title': 'Lorem ipsum dolor sit amet consectetur  elit.',
         'price': '120.000 sum',
         'creator': 'Abdushkurov Shavkat'

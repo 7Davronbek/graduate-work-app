@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 import "@fancyapps/ui/dist/fancybox.css";
+import { data } from '../backend';
 
 const TopProducts = () => {
 
@@ -21,118 +22,28 @@ const TopProducts = () => {
                     </div>
 
                     <div className="row">
-                        {/* <div className="col-lg-12 mx-auto"> */}
-                        {/* <div className="row"> */}
 
-                        <div className="col-lg-4">
-                            <div className="cards">
-                                <div className="cardsHeader">
-                                    <img src="/images/1.png" className='w-100' alt="" />
-                                    <div className="btnWrap">
-                                        <div className="shop"><FiShoppingBag /></div>
-                                        <div className="heart"><AiOutlineHeart /></div>
-                                        <div href='/images/1.png' data-fancybox="elastic" className="search"><FiSearch /></div>
-                                    </div>
-                                </div>
-                                <Link to='/product' className="cardsBody">
-                                    <h5>Lorem ipsum dolor sit amet consectetur  elit.</h5>
-                                    <h6>Price: 120.000 sum</h6>
-                                    <p>By Abdushkurov Shavkat</p>
-                                </Link>
-                            </div>
-                        </div>
+                        {data.map((item, index) => (
 
-                        <div className="col-lg-4">
-                            <div className="cards">
-                                <div className="cardsHeader">
-                                    <img src="/images/2.png" className='w-100' alt="" />
-                                    <div className="btnWrap">
-                                        <div className="shop"><FiShoppingBag /></div>
-                                        <div className="heart"><AiOutlineHeart /></div>
-                                        <div href='/images/2.png' data-fancybox="elastic" className="search"><FiSearch /></div>
+                            <div key={index} className="col-lg-4">
+                                <div className="cards">
+                                    <div className="cardsHeader">
+                                        <img src={item.image} className='w-100' alt={item.title} />
+                                        <div className="btnWrap">
+                                            <div className="shop"><FiShoppingBag /></div>
+                                            <div className="heart"><AiOutlineHeart /></div>
+                                            <div href={item.image} data-fancybox="elastic" className="search"><FiSearch /></div>
+                                        </div>
                                     </div>
+                                    <Link to='/product' className="cardsBody">
+                                        <h5>{item.title}</h5>
+                                        <h6>Price: {item.price} sum</h6>
+                                        <p>By {item.creator}</p>
+                                    </Link>
                                 </div>
-                                <Link to='/product' className="cardsBody">
-                                    <h5>Lorem ipsum dolor sit amet consectetur  elit.</h5>
-                                    <h6>Price: 120.000 sum</h6>
-                                    <p>By Abdushkurov Shavkat</p>
-                                </Link>
                             </div>
-                        </div>
+                        ))}
 
-                        <div className="col-lg-4">
-                            <div className="cards">
-                                <div className="cardsHeader">
-                                    <img src="/images/3.png" className='w-100' alt="" />
-                                    <div className="btnWrap">
-                                        <div className="shop"><FiShoppingBag /></div>
-                                        <div className="heart"><AiOutlineHeart /></div>
-                                        <div href='/images/3.png' data-fancybox="elastic" className="search"><FiSearch /></div>
-                                    </div>
-                                </div>
-                                <Link to='/product' className="cardsBody">
-                                    <h5>Lorem ipsum dolor sit amet consectetur  elit.</h5>
-                                    <h6>Price: 120.000 sum</h6>
-                                    <p>By Abdushkurov Shavkat</p>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="cards">
-                                <div className="cardsHeader">
-                                    <img src="/images/4.png" className='w-100' alt="" />
-                                    <div className="btnWrap">
-                                        <div className="shop"><FiShoppingBag /></div>
-                                        <div className="heart"><AiOutlineHeart /></div>
-                                        <div href='/images/4.png' data-fancybox="elastic" className="search"><FiSearch /></div>
-                                    </div>
-                                </div>
-                                <Link to='/product' className="cardsBody">
-                                    <h5>Lorem ipsum dolor sit amet consectetur  elit.</h5>
-                                    <h6>Price: 120.000 sum</h6>
-                                    <p>By Abdushkurov Shavkat</p>
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4">
-                            <div className="cards">
-                                <div className="cardsHeader">
-                                    <img src="/images/7.png" className='w-100' alt="" />
-                                    <div className="btnWrap">
-                                        <div className="shop"><FiShoppingBag /></div>
-                                        <div className="heart"><AiOutlineHeart /></div>
-                                        <div href='/images/7.png' data-fancybox="elastic" className="search"><FiSearch /></div>
-                                    </div>
-                                </div>
-                                <Link to='/product' className="cardsBody">
-                                    <h5>Lorem ipsum dolor sit amet consectetur  elit.</h5>
-                                    <h6>Price: 120.000 sum</h6>
-                                    <p>By Abdushkurov Shavkat</p>
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4">
-                            <div className="cards">
-                                <div className="cardsHeader">
-                                    <img src="/images/6.png" className='w-100' alt="" />
-                                    <div className="btnWrap">
-                                        <div className="shop"><FiShoppingBag /></div>
-                                        <div className="heart"><AiOutlineHeart /></div>
-                                        <div href='/images/6.png' data-fancybox="elastic" className="search"><FiSearch /></div>
-                                    </div>
-                                </div>
-                                <Link to='/product' className="cardsBody">
-                                    <h5>Lorem ipsum dolor sit amet consectetur  elit.</h5>
-                                    <h6>Price: 120.000 sum</h6>
-                                    <p>By Abdushkurov Shavkat</p>
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* </div> */}
-                        {/* </div> */}
                     </div>
                 </div>
                 <div className="blue"></div>
