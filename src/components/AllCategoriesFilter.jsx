@@ -28,9 +28,6 @@ const AllCategoriesFilter = () => {
 
                     </div>
 
-
-
-
                 </div>
 
                 <div className="row TopProducts py-5">
