@@ -43,9 +43,9 @@ const Cart = () => {
                         ))}
                         <h4>Total: {price} sum</h4>
                     </> : <>
-                            <h5>Your cart is empty</h5>
-                            <Link to='/'>Go shopping</Link>
-                        </>}
+                        <h5>Your cart is empty</h5>
+                        <Link to='/'>Go shopping</Link>
+                    </>}
                     <div className="col-lg-8 mx-auto">
 
                     </div>

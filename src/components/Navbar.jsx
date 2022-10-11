@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { RiUser3Line } from 'react-icons/ri'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { BsBagCheck } from 'react-icons/bs'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
 

@@ -23,14 +23,14 @@ export const cartReducer = (state = initialStore, action) => {
           ...state,
           carts: [...state.carts, temp],
         };
-      }
+      } break;
 
-      case REMOVE:
-        const data = state.carts.filter(el => el.id !== action.payload)
-        return {
-          ...state,
-          carts: data
-        }
+    case REMOVE:
+      const data = state.carts.filter(el => el.id !== action.payload)
+      return {
+        ...state,
+        carts: data
+      }
 
     default:
       return state;
