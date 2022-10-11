@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom'
 import { RiUser3Line } from 'react-icons/ri'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { BsBagCheck } from 'react-icons/bs'
+import { useSelector, useDispatch } from 'react-redux'
 
 const Navbar = () => {
+
+    const getdata = useSelector(state => state.cartReducer.carts)
+
     // window.addEventListener('scroll', () => {
     //     const navbar = this.document.querySelector('.Navbar')
     //     navbar.classList.toggle('active', this.window.screenY > 100)
@@ -45,7 +49,7 @@ const Navbar = () => {
                                 <Link to='/wishlist'><AiOutlineHeart /></Link>
                                 <Link to='/cart' className="bag">
                                     <BsBagCheck />
-                                    MY CART (0)
+                                    MY CART ({getdata.length})
                                 </Link>
                             </div>
                         </div>

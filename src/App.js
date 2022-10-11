@@ -1,6 +1,7 @@
 import { HashRouter, Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Main from "./pages/Main"
+import Cart from "./pages/Cart"
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       
       <div className="blurRight"></div>

@@ -7,8 +7,16 @@ import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 import "@fancyapps/ui/dist/fancybox.css";
 import { data } from '../backend';
+import { useSelector, useDispatch } from 'react-redux'
+import { ADD } from '../redux/actions/action';
 
 const TopProducts = () => {
+
+    const dispatch = useDispatch()
+
+    const addToCart = (item) => {
+        dispatch(ADD(item))
+    }
 
     return (
         <>
@@ -30,7 +38,7 @@ const TopProducts = () => {
                                     <div className="cardsHeader">
                                         <img src={item.image} className='w-100' alt={item.title} />
                                         <div className="btnWrap">
-                                            <div className="shop"><FiShoppingBag /></div>
+                                            <div onClick={() => addToCart(item)} className="shop"><FiShoppingBag /></div>
                                             <div className="heart"><AiOutlineHeart /></div>
                                             <div href={item.image} data-fancybox="elastic" className="search"><FiSearch /></div>
                                         </div>
