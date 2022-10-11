@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AiOutlineDelete } from 'react-icons/ai'
 import { useDispatch, useSelector } from 'react-redux'
@@ -22,6 +22,7 @@ const Cart = () => {
         })
         setPrice(price)
     }
+
 
     useEffect(() => {
         totals()
