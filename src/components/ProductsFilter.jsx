@@ -11,7 +11,7 @@ const ProductsFilter = () => {
     const [category, setCategory] = useState(allCategories)
 
     const handleFilter = category => {
-        const newItem = datas.filter((item) => item.category === category)
+        const newItem = data.filter((item) => item.category === category)
         setDatas(newItem)
 
         if (category === 'All') {
